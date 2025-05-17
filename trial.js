@@ -14,6 +14,10 @@ test('test', async ({ page }) => {
     // Perform login
     await login(page, 'username', 'password');
 
+    // Wait for the page to load
+    await page.waitForSelector('#some-element');
+
+
     // Close the browser
     await browser.close();
 });
