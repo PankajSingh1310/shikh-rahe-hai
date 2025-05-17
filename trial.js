@@ -17,6 +17,7 @@ test('test', async ({ page }) => {
     // Wait for the page to load
     await page.waitForSelector('#some-element');
 
+    // Perform actions after login
 
     // Close the browser
     await browser.close();
